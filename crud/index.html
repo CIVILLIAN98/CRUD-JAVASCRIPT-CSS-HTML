@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            text-align: center;
+        }
+        body{
+            background: linear-gradient(to right, rgb(146, 47, 150),rgb(235, 217, 12));
+        
+        }
+        #body{
+            width: 100%;
+            display: grid;
+            grid-gap: 5px;
+        }
+        .head{
+            display: grid;
+            grid-template-columns:0.5fr 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+            grid-gap: 5px;
+            border-radius: 25px;
+            align-items: center ;
+            font-size: 22px;
+            height: 50px;
+            background: linear-gradient(90deg, grey,rgb(80, 80, 235), );
+        }
+        main{
+            width: 90%;
+            padding:  5px;
+            border: 1px solid black;
+            background-color: grey;
+            margin: 20px auto;
+            border-radius: 15px;
+            display: grid;
+            grid-gap: 10px;
+        }
+        input{
+            height: 40px;
+        }
+        .section{
+            width: 100%;
+            display: grid;
+            grid-template-columns: 0.5fr 1fr 1fr 1fr;
+            background-color: rgb(106, 106, 106);
+            border-radius: 15px;
+            align-items: center;
+            justify-items: center;
+            justify-content: center;
+            font-size: 22px;
+            height: 50px;
+        }
+        button{
+            white-space: nowrap;
+            height: 40px;
+            font-size: 18px;
+            width: 140px;
+            cursor: pointer;
+        }
+        .btn{
+            width: 200px;
+            height: 50px;
+            font-size: 19px;
+            width: 100px;
+            border-radius: 25px;
+        }
+        .Pheader{
+            margin-top: 50px;
+        }
+        .Rtitle{
+            background-color: black;
+            border-radius: 14px;
+            font-size: 72px;
+            color: cornsilk;
+            display: inline;
+            width: 200px;
+        }
+        .Rtitle:hover{
+            border-bottom: 10px solid rgb(255, 255, 255);
+            background-color: transparent;
+            color: rgb(0, 0, 0);
+            transition: all 1s;
+        }
+        .srchr{
+            width: 80%;
+        }
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <div class="Pheader"><h1 class="Rtitle">CRUD project</h1></div>
+    <main id="main">
+        <div class="head">
+           <div> <h1>#</h1> </div>
+
+           <div><input type="text" name="" id="inputName" placeholder="Name"></div>
+
+           <div><input type="text" name="" id="inputAge" placeholder="Occupation"></div>
+           <div><button onclick="adduser()">Add new user</button></div>
+        </div>
+        <div>
+            <input type="text" class="srchr" id="inputsearch" placeholder="Search">
+        </div>
+        <article>
+            <div id="body"></div>
+        </article>
+        
+    </main>
+
+</body>
+<script src="./script.js"></script>
+</html>
