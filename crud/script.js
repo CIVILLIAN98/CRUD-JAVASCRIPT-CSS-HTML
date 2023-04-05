@@ -6,8 +6,8 @@ let data = [
   { id: 4, hid: false, name: "ISLOMJON", Occupation: "developer" },
   { id: 5, hid: false, name: "MIRAS", Occupation: "developer" },
   { id: 6, hid: false, name: "FARRUKH", Occupation: "developer" },
-  { id: 4, hid: false, name: "AHTAM", Occupation: "developer" },
-  { id: 4, hid: false, name: "ABDULAZIZ", Occupation: "developer" },
+  { id: 7, hid: false, name: "AHTAM", Occupation: "developer" },
+  { id: 8, hid: false, name: "ABDULAZIZ", Occupation: "developer" },
 ];
 
 // variebles
